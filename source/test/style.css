@@ -1,0 +1,288 @@
+body{
+font-family: Calibri,Helvetica, Arial, sans-serif;	
+//display:flex;
+}
+.content{
+	margin-right:2%;
+	margin-left:2%;
+	widht:100%;
+
+
+}
+
+h2{
+	padding-left:0.7em;
+	margin:0;
+	padding-top:0.3em;
+}
+p{
+	padding-left:1.2em;
+}
+
+.bg{
+	background-color:grey;
+}
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.box{
+background: none repeat scroll 0 0 #ffffff;
+//height:12em;
+margin: 0.6% 0.6% 0.6% 0.6%;
+//margin-right:-100%;
+float:left;
+vertical-align:top;
+display:block;
+     -moz-border-radius: 0.8em 0.15em 0.8em 0.15em;
+    -webkit-border-radius: 0.8em 0.15em 0.8em 0.15em;
+    -khtml-border-radius: 0.8em 0.15em 0.8em 0.15em;
+    border-radius: 0.8em 0.15em 0.8em 0.15em;
+}
+
+.hero{
+	position:relative;
+	width:98.2%;
+	float:left;
+	overflow:hidden
+}
+
+.hero .copy{
+	width:60%;
+	position: absolute;
+	//left:0.3em;
+	background-color:rgb(255,255,255);
+	background-color:rgba(255,255,255,0.7);
+	display:block;
+	bottom:3em;
+	right:0em;
+	//float:right;	
+}
+
+.hero .img{
+	position:relative;	
+}
+
+
+.big_square{
+	position:relative;
+	width:48.6700000000%; //48.8 on oikea
+	float:left;
+	overflow:hidden;
+}
+.big_square img{
+	//padding-bottom:1.2%;	
+	position:relative;
+	//z-index:-3;
+
+}
+
+.big_square .copy{
+	width:80%;
+	position: absolute;
+	//left:0.3em;
+	background-color:rgb(255,255,255);
+	background-color:rgba(255,255,255,0.7);
+	top:2em;
+	display:block;
+}
+.square{
+	width:23.8%;
+	position:relative;
+	float:left;
+
+
+	//height:12em;
+	//clear:both;
+	overflow:hidden;	
+}
+
+.square .copy{
+	width:100%;
+	position: absolute;
+	//left:0.3em;
+	background-color:rgb(255,255,255);
+	background-color:rgba(255,255,255,0.7);
+	display:block;
+	bottom:1em;
+}	
+
+
+.square img{
+	width:100%;	
+	//padding-top:0.6%%;
+}
+.square_2x{
+	width:48.8%;
+	position:relative;
+	float:left;
+
+
+	//clear:both;
+	overflow:hidden;
+	//display:none;
+	//height:12em;
+}
+
+.square_2x img{
+	width:48.770491803278700%;//oikea on 48.77
+
+	position:relative;
+	float:left;
+}
+
+.square_2x .right{
+	width:48.770491803278700%; //oikea on 48.77
+	position:relative;
+	float:right;
+}
+
+.square_2x .copy{
+	width:51.22950819672130000%;
+	float:left;
+	//position:absolute;
+	//top:1.5em;
+	//background-color:rgb(255,255,255);
+	//background-color:rgba(255,255,255,0.7);
+	//display:none;
+	//height:12em;
+}
+
+
+.square_3x{
+	width:73.8%;
+	//height:12em;	
+}
+
+.col{
+display:block;
+float:left;
+margin: 1% 0 1% 1.6%;
+}
+.col:first-child {margin-left:0;}
+
+.span_1_of_8{
+	width:11.1%;
+}
+.span_2_of_8{
+	width:23.8%;
+}
+.span_3_of_8{
+	width:36.5%;
+}
+.span_4_of_8{
+	width:49.2%;
+}
+.span_5_of_8{
+	width:61.9%;
+}
+.span_6_of_8{
+	width:74.6%;
+}
+.span_7_of_8{
+	width:87.3%;
+}
+span_8_of_8{
+	width:100%;
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	//clear:both;
+}
+
+img{
+max-width:100%;
+position:relative; //tarviiko
+margin:0;
+padding:0;
+outline:0;
+font-size:100%;
+vertical-align:bottom;
+background:transparent;
+}
+
+.clearfix { *zoom: 1; }
+.clearfix:before, .clearfix:after { display: table; content: ""; }
+.clearfix:after { clear: both; }
+
+
+@media screen and (max-width: 768px) {
+	
+.big_square{
+	width:48.8%;
+
+}
+.square{
+	width:48.8%;
+
+	
+}
+.square_2x{
+	width:48.8%;
+
+}
+
+.square_2x img{
+	width:49.0%;//oikea on 48.77
+	position:relative;
+	float:left;
+}
+
+.square_2x .right{
+	width:49.0%;//oikea on 48.77
+	position:relative;
+	float:left;
+}
+.square_2x .copy{
+	width:51.0000%;
+}
+}
+@media screen and (max-width: 480px) {
+.square_2x{
+	width:48.8%;
+	padding-bottom:2em;
+	
+}
+
+.square{
+	width:48.8%;
+	padding-bottom:2em;
+
+}
+
+.big_square{
+	width:48.8%;
+	padding-bottom:2em;
+
+}
+
+.square_2x img{
+	width:100%;
+}
+
+.square_2x .right{
+	width:100%;
+}
+
+.square_2x .copy{
+	width:100%;
+	position: absolute;
+	//left:0.3em;
+	background-color:rgb(255,255,255);
+	background-color:rgba(255,255,255,0.7);
+	display:block;
+	top:1em;
+	//right:0.5em;
+}
+
+}
+
+
