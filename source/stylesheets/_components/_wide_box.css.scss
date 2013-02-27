@@ -22,7 +22,7 @@
 .wide-box .right{
 	width:48.770491803278700%; //oikea on 48.77
 	position:relative;
-	float:right;
+	float:left;
 }
 
 .wide-box .copy{
@@ -34,4 +34,68 @@
 	//background-color:rgba(255,255,255,0.7);
 	//display:none;
 	//height:12em;
+}
+
+@media screen and (max-width: 768px) {
+
+.wide-box{
+	width:48.8%;
+
+}
+
+.wide-box img{
+	width:49.0%;//oikea on 48.77
+	position:relative;
+	float:left;
+}
+
+.wide-box .right{
+	width:48.8%;//oikea on 48.77
+	position:relative;
+	float:left;
+}
+.wide-box .copy{
+	width:51.0000%;
+}
+}
+
+@media screen and (max-width: 480px) {
+.wide-box{
+	width:98.8%;
+  	background: none;
+  	padding-bottom:1em;
+	
+}
+
+.square{
+	width:48.8%;
+	padding-bottom:2em;
+
+}
+
+.big_square{
+	width:48.8%;
+	padding-bottom:2em;
+
+}
+
+.wide-box img{
+	width:100%;
+}
+
+.wide-box .right{
+	width:100%;
+}
+
+.wide-box .copy{
+	width:100%;
+	position: absolute;
+	//left:0.3em;
+	background-color:rgb(255,255,255);
+	background-color:rgba(255,255,255,0.7);
+	display:block;
+	top:1em;
+	//right:0.5em;
+}
+
 }

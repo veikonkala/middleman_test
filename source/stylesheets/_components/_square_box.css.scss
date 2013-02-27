@@ -18,3 +18,22 @@
 .square-box img{
 	width:100%;	
 }
+
+@media screen and (max-width: 768px) {
+
+.square-box{
+	width:48.8%;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+
+.square-box{
+	width:98.8%;
+	background:none;
+	padding-bottom:1em;
+
+}
+
+}
