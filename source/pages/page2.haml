@@ -1,0 +1,28 @@
+---    
+square_boxes:
+  -
+   square_box:
+     img: "/images/test_img/1.jpg"
+     title: "Tokasivu"
+     text: "supa huba doo" 
+  -
+   square_box:
+     img: "/images/test_img/2.jpg"
+     title: "Jee, se ..."
+     text: "..syö sinäkin"
+  -
+   square_box:
+     img: "/images/test_img/3.jpg"
+     title: "toimii..."
+     text: "supa huba doo" 
+  -
+   square_box:
+     img: "/images/test_img/4.jpg"
+     title: "hienosti"
+     text: "..syö sinäkin"  
+
+ 
+#= YAML.load(File.read("#{File.basename(__FILE__,'.haml')}.yml"))
+---
+=partial('components/site-elements/_header', :locals => {:selected => "Sivu2"})
+=partial "components/square-box/_square-box"

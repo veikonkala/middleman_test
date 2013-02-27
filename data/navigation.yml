@@ -1,0 +1,11 @@
+---
+navitems:
+  -
+   navitem:
+     title: "Etusivu"
+     link: "index.html"
+  -
+   navitem:
+     title: "Sivu2"
+     link: "page2.html"     
+---
