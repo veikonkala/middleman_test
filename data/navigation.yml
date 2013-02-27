@@ -7,5 +7,9 @@ navitems:
   -
    navitem:
      title: "Sivu2"
-     link: "page2.html"     
+     link: "page2.html"
+  -
+   navitem:
+     title: "StyleGuide"
+     link: "styleguide.html"     
 ---

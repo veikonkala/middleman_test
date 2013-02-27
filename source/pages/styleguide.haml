@@ -1,0 +1,55 @@
+---
+heros:
+  -
+   hero:
+     img: "/images/test_img/5.jpg"
+     title: "HERO"
+     text: "Hero text" 
+     
+wide_boxes:
+  -
+   wide_box:
+     img: "/images/test_img/2.jpg"
+     title: "WIDE-BOX Left"
+     text: "Wide-box text" 
+  -
+   wide_box:
+     img: "/images/test_img/1.jpg"
+     type: "right"
+     title: "WIDE-BOX Right"
+     text: "Wide-box text"
+     
+square_boxes:
+  -
+   square_box:
+     img: "/images/test_img/1.jpg"
+     title: "Square1"
+     text: "supa huba doo" 
+---
+
+=partial('components/site-elements/_header', :locals => {:selected => "StyleGuide"})
+
+.section
+  %h1
+    Hero
+  %p
+    Hero component that can be used in the top of the pages
+  %br  
+
+=partial "components/hero/_hero"
+
+.section
+  %h1
+    Wide-box (two variations)
+  %p
+    Wide-box is to promote products
+  %br
+=partial "components/wide-box/_wide-box"
+
+.section
+  %h1
+    Square-Box
+  %p
+    Small promobox to that promote something simple
+  %br
+=partial "components/square-box/_square-box"
