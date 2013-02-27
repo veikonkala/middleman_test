@@ -6,6 +6,7 @@ description:
 # Middleman Project Template: HTML5BP HAML
 
 TIMON SKODALAILUT:
+[Komponenttipohjainen setti](pages/index.html)
 
 [Fancy Box](fancy.html), komponentti johon on ulkoistettu yml-data
 

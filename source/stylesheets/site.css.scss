@@ -1,10 +1,5 @@
-/**
-
-//HTML5 Boilerplate + Normalize
-*= require "_vendor/normalize.css"
-*= require "_vendor/html5bp.css"
-
-//Grid
-*= require "_layout/grid"
-
-*/
+@import "_base/_base.css";
+@import "_shared/_shared_component.css";
+@import "_components/_hero.css";
+@import "_components/_wide_box.css";
+@import "_components/_square_box.css";

@@ -1,0 +1,9 @@
+@mixin get-fonts($size, $padding, $margin){
+	font-size: #{$size}em;
+	padding-left: #{$padding/$size}em;
+	margin-left:#{$margin/$size}em;
+	
+	
+
+}
+

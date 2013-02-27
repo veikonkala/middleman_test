@@ -1,0 +1,115 @@
+@mixin get-fonts($size, $padding, $margin){
+	font-size: #{$size}em;
+	padding-left: #{$padding/$size}em;
+	margin-left:#{$margin/$size}em;
+	
+	
+
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+} 
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display:block;
+}
+
+nav ul, nav li { margin: 0; } 
+nav ul, ul { 
+list-style:none; 
+font-size:1.3em;
+text-transform: uppercase;
+font-family: 'Share Tech', Helvetica, Arial,sans-serif;
+}
+
+header{
+  background: #3e4d39;
+}
+
+img{
+max-width:100%;
+position:relative; //tarviiko
+}
+
+ol{
+font-family: 'Share Tech', Helvetica, Arial,sans-serif;
+
+//font: 1em 'Source Sans Pro', sans-serif;
+ 	margin-left:1.3em;
+	margin-right:1.3em;
+  padding-left:0px; 
+}
+nav ul{
+  text-align: right;
+  overflow: auto;
+}
+
+nav li{
+  margin: 0.5% 0 0.3% 1%;
+  text-align: center;
+  overflow: auto;
+  float: left;
+  width: 16.4166666667%;
+}
+
+nav a{
+  text-decoration: none;
+  margin: 0;
+  display: block;
+  padding: 2% 0 1% 1%;
+  margin: 1% 2% 1% 0;
+  background-color:rgb(78,94,73);
+  background-color: rgba(255,255,255,0.1);
+    color: #fff;
+  color: rgba(255,255,255, 0.9);
+  letter-spacing: 0.05em;
+}
+
+
+p {
+	//margin-left:1em;
+	//margin-right:1em;
+	//margin-bottom:1em;
+	@include get-fonts(1,0.5,0)
+
+	//font: 1em 'Source Sans Pro', sans-serif;
+}
+h1,h2,h3{
+		@include get-fonts(2,0.5,0)
+//		font: 2em 'Source Sans Pro', sans-serif;
+}
+body{
+	background-color:#d5d9d1;
+	font-family: 'Share Tech', Helvetica, Arial,sans-serif;
+
+}
+
+
+.nav-container{
+	margin-bottom:2em;
+}
+
+
+
+.selected{
+	background: none repeat scroll 0 0 #8f968d;
+}

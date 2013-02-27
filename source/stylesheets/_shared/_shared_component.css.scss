@@ -1,0 +1,18 @@
+.box {
+  //background: none repeat scroll 0 0 #ffffff;
+  margin: 0.6% 0.6% 0.6% 0.6%;
+  float: left;
+  vertical-align: top;
+  display: block;
+  -moz-border-radius: 0.8em 0.15em 0.8em 0.15em;
+  -webkit-border-radius: 0.8em 0.15em 0.8em 0.15em;
+  -khtml-border-radius: 0.8em 0.15em 0.8em 0.15em;
+  border-radius: 0.8em 0.15em 0.8em 0.15em;
+}
+
+.section {
+  margin-right: 5%;
+  margin-left: 5%;
+  width: 90%; 
+  clear: both;
+}

@@ -1,0 +1,69 @@
+---
+heros:
+  -
+   hero:
+     img: "/images/test_img/5.jpg"
+     title: "BIG HERO"
+     text: "supa huba doo" 
+     
+wide_boxes:
+  -
+   wide_box:
+     img: "/images/test_img/2.jpg"
+     title: "WIDE BOX 1"
+     text: "default" 
+  -
+   wide_box:
+     img: "/images/test_img/1.jpg"
+     type: "right"
+     title: "WIDE BOX 2"
+     text: "..right side"
+     
+square_boxes:
+  -
+   square_box:
+     img: "/images/test_img/1.jpg"
+     title: "Square1"
+     text: "supa huba doo" 
+  -
+   square_box:
+     img: "/images/test_img/2.jpg"
+     title: "Square2"
+     text: "..syö sinäkin"
+  -
+   square_box:
+     img: "/images/test_img/3.jpg"
+     title: "Square3"
+     text: "supa huba doo" 
+  -
+   square_box:
+     img: "/images/test_img/4.jpg"
+     title: "Square4"
+     text: "..syö sinäkin"  
+  -
+   square_box:
+     img: "/images/test_img/1.jpg"
+     title: "Square5"
+     text: "supa huba doo" 
+  -
+   square_box:
+     img: "/images/test_img/2.jpg"
+     title: "Square6"
+     text: "..syö sinäkin"
+  -
+   square_box:
+     img: "/images/test_img/3.jpg"
+     title: "Square7"
+     text: "supa huba doo" 
+  -
+   square_box:
+     img: "/images/test_img/4.jpg"
+     title: "Square8"
+     text: "..syö sinäkin"
+ 
+#= YAML.load(File.read("#{File.basename(__FILE__,'.haml')}.yml"))
+---
+=partial('components/site-elements/_header', :locals => {:selected => "selected"})
+=partial "components/hero/_hero"
+=partial "components/wide-box/_wide-box"
+=partial "components/square-box/_square-box"

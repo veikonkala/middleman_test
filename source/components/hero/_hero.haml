@@ -1,0 +1,20 @@
+---
+heros:
+  -
+   hero:
+     img: "images/test_img/5.jpg"
+     title: "Big heros2"
+     text: "supa huba doo" 
+  -
+   hero:
+     img: "images/test_img/2.jpg"
+     title: "Kingis on hyvää"
+     text: "..syö sinäkin" 
+---
+%div{:class =>['section', 'group']}
+	- data.page.heros.each do |s|
+		%div{:class =>['hero', 'box']}
+			%img{:src =>s.hero.img}
+			%div{:class =>'copy'}
+				%h2=s.hero.title
+				%p=s.hero.text
