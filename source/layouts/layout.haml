@@ -6,13 +6,20 @@
 %html.no-js
   %head
     %meta{:charset => "utf-8"}
+   
     %meta{:content => "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no", :name => "viewport"}
+    
     %title=page_title
+    
     = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Source+Sans+Pro|Share+Tech|Carrois+Gothic&subset=latin,latin-ext"
     = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+    
     = javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js"
+    
     =favicon_tag "/favicon.ico"
     = stylesheet_link_tag "site"
      
-  %body
-    %div{:role => "main", :class => "main"}= yield
+  
+    %body
+    
+      %div{:role => "main", :class => "main"}= yield
