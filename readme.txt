@@ -1,4 +1,4 @@
-bundle exec middleman server
+Bundle exec middleman server
 
 vaatii: middleman, compass, haml ja sass
 
