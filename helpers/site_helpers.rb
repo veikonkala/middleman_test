@@ -16,16 +16,6 @@ module SiteHelpers
     end
     description
   end
-  
-  def embed_content(contentID,default="hahaha")
-    contentID=local_assigns[:contentID] || true
-    if contentID
-      content= default
-    else
-      content= contentID
-    end
-    content
-  end
-  
+
 
 end
