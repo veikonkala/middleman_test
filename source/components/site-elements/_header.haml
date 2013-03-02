@@ -16,8 +16,8 @@ navitems:
         - data.navigation.navitems.each do |s|
           -if selected == s.navitem.title
             %li{:class => 'selected'}
-              =link_to s.navitem.title, s.navitem.link
+              =link_to s.navitem.title, s.navitem.link, :relative =>true
           -else
             %li
-              =link_to s.navitem.title, s.navitem.link
+              =link_to s.navitem.title, s.navitem.link, :relative =>true
 

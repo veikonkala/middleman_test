@@ -1,7 +1,0 @@
-%div{:class =>['section', 'group']}
-	- data.page.fancyboxes.each do |s|
-		%div{:class =>[s.fancybox.type, 'box']}
-			%img{:src =>s.fancybox.img}
-			%div{:class =>'copy'}
-				%h2=s.fancybox.title
-				%p=s.fancybox.text

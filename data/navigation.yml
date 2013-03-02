@@ -3,7 +3,7 @@ navitems:
   -
    navitem:
      title: "Etusivu"
-     link: "index.html"
+     link: "frontpage.html"
   -
    navitem:
      title: "Sivu2"

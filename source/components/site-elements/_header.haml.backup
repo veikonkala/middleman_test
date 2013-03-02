@@ -1,8 +1,0 @@
-%header
-  %div
-    %nav.container.nav-container
-      %ul
-        %li{:class => selected}
-          =link_to 'Koti', 'index.html'
-        %li
-          =link_to 'Sivu2', 'page2.html'
