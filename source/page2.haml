@@ -5,22 +5,26 @@ square_boxes:
    square_box:
      img: "images/test_img/1.jpg"
      title: "Tokasivu"
-     text: "supa huba doo" 
+     text: "supa huba doo"
+     link: "styleguide.html" 
   -
    square_box:
      img: "images/test_img/2.jpg"
      title: "Jee, se ..."
      text: "..syö sinäkin"
+     link: "frontpage.html"
   -
    square_box:
      img: "images/test_img/3.jpg"
      title: "toimii..."
-     text: "supa huba doo" 
+     text: "supa huba doo"
+     link: "#" 
   -
    square_box:
      img: "images/test_img/4.jpg"
      title: "hienosti"
-     text: "..syö sinäkin"  
+     text: "..syö sinäkin"
+     link: "#"  
 split_promos:
   -
    split_promo:
@@ -28,31 +32,37 @@ split_promos:
      link: "styleguide.html"
      text: "Check out latest collections"
      img: "images/test_img/5.jpg"
+     link: "#"
   -
    split_promo:
      title: "Dry and easy"
      text: "Mix and shake"
      img: "images/test_img/5.jpg"
+     link: "#"
   -
    split_promo:
      title: "Home grown herbs"
      text: "Mapple syryp from your yard"
      img: "images/test_img/5.jpg"
+     link: "#"
   -
    split_promo:
      title: "Wind blows"
      text: ".. and the leaves shivers"
-     img: "images/test_img/5.jpg" 
+     img: "images/test_img/5.jpg"
+     link: "#" 
   -
    split_promo:
      title: "Seed & plant"
      text: "Grow your own tree"
      img: "images/test_img/5.jpg"
+     link: "#"
   -
    split_promo:
      title: "Sweet mix"
      text: "Cherry & Mapple leaves"
      img: "images/test_img/5.jpg"
+     link: "#"
 #= YAML.load(File.read("#{File.basename(__FILE__,'.haml')}.yml"))
 ---
 =partial('components/site-elements/header', :locals => {:selected => "Sivu2"})

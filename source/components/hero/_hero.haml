@@ -9,12 +9,14 @@ heros:
    hero:
      img: "images/test_img/2.jpg"
      title: "Kingis on hyvää"
+     link: "index.html"
      text: "..syö sinäkin" 
 ---
 %div{:class =>['section', 'group']}
-	- data.page.heros.each do |s|
-		%div{:class =>['hero', 'box']}
-			%img{:src =>s.hero.img}
-			%div{:class =>'copy'}
-				%h2=s.hero.title || "heros.hero.title"
-				%p=s.hero.text || "heros.hero.text"
+  - data.page.heros.each do |s|
+    %div{:class =>['hero', 'box']}
+      %a{:href =>s.hero.link || "#"}
+        %img{:src =>s.hero.img}
+        %div{:class =>'copy'}
+          %h2=s.hero.title || "heros.hero.title"
+          %p=s.hero.text || "heros.hero.text"
