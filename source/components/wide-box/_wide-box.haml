@@ -17,5 +17,5 @@ wide_boxes:
 		%div{:class =>['wide-box', 'box']}
 			%img{:src =>s.wide_box.img, :class =>s.wide_box.type}
 			%div{:class =>'copy'}
-				%h2=s.wide_box.title
-				%p=s.wide_box.text
+				%h2=s.wide_box.title || "wide_boxes.wide_box.title"
+				%p=s.wide_box.text || "wide_boxes.wide_box.text"

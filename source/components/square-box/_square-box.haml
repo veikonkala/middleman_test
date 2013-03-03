@@ -16,5 +16,5 @@ square_boxes:
 		%div{:class =>['square-box', 'box']}
 			%img{:src =>s.square_box.img}
 			%div{:class =>'copy'}
-				%h2=s.square_box.title
-				%p=s.square_box.text
+				%h2=s.square_box.title || "square_boxes.square_box.title"
+				%p=s.square_box.text || "square_boxes.square_box.text"

@@ -16,5 +16,5 @@ heros:
 		%div{:class =>['hero', 'box']}
 			%img{:src =>s.hero.img}
 			%div{:class =>'copy'}
-				%h2=s.hero.title
-				%p=s.hero.text
+				%h2=s.hero.title || "heros.hero.title"
+				%p=s.hero.text || "heros.hero.text"
