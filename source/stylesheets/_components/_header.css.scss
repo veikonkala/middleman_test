@@ -24,6 +24,10 @@ nav a{
   letter-spacing: 0.05em;
 }
 
+nav .selected{
+  background: none repeat scroll 0 0 #8f968d;
+}
+
 @media screen and (max-width: 768px) {
 
   nav li{
