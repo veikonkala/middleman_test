@@ -65,7 +65,7 @@ square_boxes:
  
 #= YAML.load(File.read("#{File.basename(__FILE__,'.haml')}.yml"))
 ---
-=partial('components/site-elements/_header', :locals => {:selected => "Etusivu"})
-=partial "components/hero/_hero"
-=partial "components/wide-box/_wide-box"
-=partial "components/square-box/_square-box"
+=partial('components/site-elements/header', :locals => {:selected => "Etusivu"})
+=partial "components/hero/hero"
+=partial "components/wide-box/wide-box"
+=partial "components/square-box/square-box"

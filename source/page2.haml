@@ -21,9 +21,40 @@ square_boxes:
      img: "images/test_img/4.jpg"
      title: "hienosti"
      text: "..syö sinäkin"  
-
- 
+split_promos:
+  -
+   split_promo:
+     title: "Best leaves"
+     link: "styleguide.html"
+     text: "Check out latest collections"
+     img: "images/test_img/5.jpg"
+  -
+   split_promo:
+     title: "Dry and easy"
+     text: "Mix and shake"
+     img: "images/test_img/5.jpg"
+  -
+   split_promo:
+     title: "Home grown herbs"
+     text: "Mapple syryp from your yard"
+     img: "images/test_img/5.jpg"
+  -
+   split_promo:
+     title: "Wind blows"
+     text: ".. and the leaves shivers"
+     img: "images/test_img/5.jpg" 
+  -
+   split_promo:
+     title: "Seed & plant"
+     text: "Grow your own tree"
+     img: "images/test_img/5.jpg"
+  -
+   split_promo:
+     title: "Sweet mix"
+     text: "Cherry & Mapple leaves"
+     img: "images/test_img/5.jpg"
 #= YAML.load(File.read("#{File.basename(__FILE__,'.haml')}.yml"))
 ---
-=partial('components/site-elements/_header', :locals => {:selected => "Sivu2"})
-=partial "components/square-box/_square-box"
+=partial('components/site-elements/header', :locals => {:selected => "Sivu2"})
+=partial "components/square-box/square-box"
+=partial "components/split-promo/split-promo"

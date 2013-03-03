@@ -25,10 +25,42 @@ square_boxes:
    square_box:
      img: "images/test_img/1.jpg"
      title: "Square1"
+     text: "supa huba doo"
+  -
+   square_box:
+     img: "images/test_img/1.jpg"
+     title: "Square2"
      text: "supa huba doo" 
+  -
+   square_box:
+     img: "images/test_img/1.jpg"
+     title: "Square3"
+     text: "supa huba doo" 
+  -
+   square_box:
+     img: "images/test_img/1.jpg"
+     title: "Square4"
+     text: "supa huba doo"
+split_promos:
+  -
+   split_promo:
+     title: "Best leaves"
+     link: "styleguide.html"
+     text: "Check out latest collections"
+     img: "images/test_img/5.jpg"
+  -
+   split_promo:
+     title: "Dry and easy"
+     text: "Mix and shake"
+     img: "images/test_img/5.jpg"
+  -
+   split_promo:
+     title: "Home grown herbs"
+     text: "Mapple syryp from your yard"
+     img: "images/test_img/5.jpg"  
 ---
 
-=partial('components/site-elements/_header', :locals => {:selected => "StyleGuide"})
+=partial('components/site-elements/header', :locals => {:selected => "StyleGuide"})
 
 .section
   %h1
@@ -37,7 +69,7 @@ square_boxes:
     Hero component that can be used in the top of the pages
   %br  
 
-=partial "components/hero/_hero"
+=partial "components/hero/hero"
 
 .section
   %h1
@@ -45,7 +77,7 @@ square_boxes:
   %p
     Wide-box is to promote products
   %br
-=partial "components/wide-box/_wide-box"
+=partial "components/wide-box/wide-box"
 
 .section
   %h1
@@ -53,4 +85,12 @@ square_boxes:
   %p
     Small promobox to that promote something simple
   %br
-=partial "components/square-box/_square-box"
+=partial "components/square-box/square-box"
+
+.section
+  %h1
+    Split-Promo
+  %p
+    Promote the best offerings
+  %br
+=partial "components/_split-promo/split-promo"
