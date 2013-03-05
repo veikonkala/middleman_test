@@ -10,8 +10,8 @@ navitems:
      link: "page2.html"     
 ---
 %header
-  %div
-    %nav.container.nav-container
+  .nav-container
+    %nav
       %ul
         - data.navigation.navitems.each do |s|
           -if selected == s.navitem.title

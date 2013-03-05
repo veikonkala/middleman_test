@@ -1,9 +1,13 @@
-nav ul{
+header{
+  background: #3e4d39;
+}
+
+.nav-container nav ul{
   text-align: right;
   overflow: auto;
 }
 
-nav li{
+.nav-container nav li{
   margin: 0.5% 0 0.3% 1%;
   text-align: center;
   overflow: auto;
@@ -11,7 +15,11 @@ nav li{
   width: 16.4166666667%;
 }
 
-nav a{
+.nav-container{
+  margin-bottom:2em;
+}
+
+.nav-container nav a{
   text-decoration: none;
   margin: 0;
   display: block;
@@ -24,13 +32,21 @@ nav a{
   letter-spacing: 0.05em;
 }
 
-nav .selected{
+.nav-container nav .selected{
   background: none repeat scroll 0 0 #8f968d;
+}
+
+.nav-container nav ul, nav li { margin: 0; } 
+.nav-container nav ul{ 
+list-style:none; 
+font-size:1.3em;
+text-transform: uppercase;
+font-family: 'Share Tech', Helvetica, Arial,sans-serif;
 }
 
 @media screen and (max-width: 768px) {
 
-  nav li{
+  .nav-container nav li{
     width:22%;
   }
 
@@ -38,7 +54,7 @@ nav .selected{
 
 @media screen and (max-width: 480px) {
 
-  nav li{
+  .nav-container nav li{
     margin-top:0.1em;
     width:90%;
     clear:both;
