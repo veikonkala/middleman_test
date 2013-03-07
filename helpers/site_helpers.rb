@@ -18,7 +18,7 @@ module SiteHelpers
   end
 
   def run_git
-    system('git pull -r')
+    system('git pull')
   end
 
 end
