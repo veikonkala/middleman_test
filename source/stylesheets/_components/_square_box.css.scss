@@ -1,11 +1,11 @@
-.square-box{
+.square-box {
 	width:23.8%;
 	position:relative;
 	float:left;
 	overflow:hidden;	
 }
 
-.square-box .copy{
+.square-box .copy {
 	width:100%;
 	position: absolute;
 	background-color:rgb(255,255,255);
@@ -15,25 +15,24 @@
 }	
 
 
-.square-box img{
+.square-box img {
 	width:100%;	
 }
 
-@media screen and (max-width: 768px) {
+@media #{$tablet-portrait} {
 
-.square-box{
-	width:48.8%;
-}
-
-}
-
-@media screen and (max-width: 480px) {
-
-.square-box{
-	width:98.8%;
-	background:none;
-	padding-bottom:1em;
+  .square-box{
+  	width:48.8%;
+  }
 
 }
+
+@media #{$mobile-portrait} {
+
+  .square-box{
+  	width:98.8%;
+  	background:none;
+  	padding-bottom:1em;
+  }
 
 }

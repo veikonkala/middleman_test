@@ -1,58 +1,58 @@
-header{
+header {
   background: #3e4d39;
 }
 
-.nav-container nav ul{
-  text-align: right;
-  overflow: auto;
-}
-
-.nav-container nav li{
-  margin: 0.5% 0 0.3% 1%;
-  text-align: center;
-  overflow: auto;
-  float: left;
-  width: 16.4166666667%;
-}
-
-.nav-container{
+.nav-container {
   margin-bottom:2em;
+  
+  nav {
+    ul {
+      text-align: right;
+      overflow: auto;
+      list-style:none; 
+      font-size:1.3em;
+      text-transform: uppercase;
+      font-family: $font;
+      margin: 0;
+    }
+  
+    li {
+      margin: 0.5% 0 0.3% 1%;
+      text-align: center;
+      overflow: auto;
+      float: left;
+      width: 16.4166666667%;
+    }
+    
+    a {
+      text-decoration: none;
+      margin: 0;
+      display: block;
+      padding: 2% 0 1% 1%;
+      margin: 1% 2% 1% 0;
+      background-color:rgb(78,94,73);
+      background-color: rgba(255,255,255,0.1);
+      color: #fff;
+      color: rgba(255,255,255, 0.9);
+      letter-spacing: 0.05em;
+    }
+    
+    .selected{
+      background: none repeat scroll 0 0 #8f968d;
+    }
+    
+  }
 }
 
-.nav-container nav a{
-  text-decoration: none;
-  margin: 0;
-  display: block;
-  padding: 2% 0 1% 1%;
-  margin: 1% 2% 1% 0;
-  background-color:rgb(78,94,73);
-  background-color: rgba(255,255,255,0.1);
-  color: #fff;
-  color: rgba(255,255,255, 0.9);
-  letter-spacing: 0.05em;
-}
+@media #{$tablet-portrait} {
 
-.nav-container nav .selected{
-  background: none repeat scroll 0 0 #8f968d;
-}
-
-.nav-container nav ul, nav li { margin: 0; } 
-.nav-container nav ul{ 
-list-style:none; 
-font-size:1.3em;
-text-transform: uppercase;
-font-family: 'Share Tech', Helvetica, Arial,sans-serif;
-}
-
-@media screen and (max-width: 768px) {
-
-  .nav-container nav li{
+  .nav-container nav li {
     width:22%;
   }
 
 }
 
-@media screen and (max-width: 480px) {
+@media #{$mobile-portrait} {
 
   .nav-container nav li{
     margin-top:0.1em;

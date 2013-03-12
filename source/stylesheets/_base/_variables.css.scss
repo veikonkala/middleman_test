@@ -1,2 +1,28 @@
+// Site wide variables
+
+// Layouts
+$default-margin: 1em;
+
+// Fonts
 $font: 'Share Tech', Helvetica, Arial,sans-serif;
+
+// Colors
 $bgcolor: #d5d9d1;
+
+// Mediaeury breakpoints 
+// Custom breakpoints
+$mobile-portrait: "only screen and (max-width : 480px)";
+$mobile-landscape: "only screen and (max-width : 800px) and (max-height: 480px) and (orientation : landscape)";
+$tablet-portrait: "only screen and (max-width : 768px)";
+
+
+// Special, 
+$smartphone-portrait-and-landscape: "only screen and (min-device-width : 240px) and (max-device-width : 480px)";
+$smartphone-landscape: "only screen and (min-width : 321px)";
+$smartphone-portrait: "only screen and (max-width : 320px)";
+$ipad-portrait-and-landscape: "only screen and (min-device-width : 768px) and (max-device-width : 1024px)";
+$ipad-landscape: "only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)";
+$ipad-portrait: "only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)";
+$desktop-and-laptop: "only screen and (min-width : 1224px)";
+$large-screen: "only screen and (min-width : 1824px)";
+$iphone4: "only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5)";
