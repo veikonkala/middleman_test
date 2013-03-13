@@ -30,7 +30,7 @@ header {
       display: block;
       padding: 2% 0 1% 1%;
       margin: 1% 2% 1% 0;
-      background-color:rgb(78,94,73);
+      background-color: rgb(78,94,73);
       background-color: rgba(255,255,255,0.1);
       color: #fff;
       color: rgba(255,255,255, 0.9);
@@ -47,7 +47,7 @@ header {
 @media #{$tablet-portrait} {
 
   .nav-container nav li {
-    width:22%;
+    width: 22%;
   }
 
 }
@@ -55,12 +55,12 @@ header {
 @media #{$mobile-portrait} {
 
   .nav-container nav li{
-    margin-top:0.1em;
-    width:90%;
-    clear:both;
-    text-align:left;
-    padding-left:5%;
-    padding-right:5%;
+    margin-top: 0.1em;
+    width: 90%;
+    clear: both;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
 }
