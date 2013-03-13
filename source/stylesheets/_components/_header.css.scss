@@ -3,7 +3,7 @@ header {
 }
 
 .nav-container {
-  margin-bottom:2em;
+  margin-bottom:1.5em;
   
   nav {
     ul {
@@ -63,4 +63,15 @@ header {
     padding-right: 5%;
   }
 
+}
+
+@media #{$desktop} {
+ 
+  .nav-container{
+     width:960px;
+     //margin: 0 auto;
+     margin-left:auto;
+     margin-right:auto;
+    
+  }
 }
