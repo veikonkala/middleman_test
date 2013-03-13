@@ -2,21 +2,23 @@
 	position:relative;
 	width:98.8%;
 	float:left;
-	overflow:hidden
+	overflow:hidden;
+
+  .copy {
+    width:60%;
+    position: absolute;
+    //left:0.3em;
+    background-color:rgb(255,255,255);
+    background-color:rgba(255,255,255,0.7);
+    display:block;
+    bottom:3em;
+    right:0em;
+    //float:right;  
+  }
+  
+  .img{
+    position:relative;
+  }
 }
 
-.hero .copy {
-	width:60%;
-	position: absolute;
-	//left:0.3em;
-	background-color:rgb(255,255,255);
-	background-color:rgba(255,255,255,0.7);
-	display:block;
-	bottom:3em;
-	right:0em;
-	//float:right;	
-}
 
-.hero .img {
-	position:relative;	
-}

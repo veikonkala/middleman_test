@@ -13,46 +13,42 @@
   	position:relative;
   	float:left;
   }
+  
+  .right {
+    width:48.770491803278700%; //oikea on 48.77
+    position:relative;
+    float:right;
+  }
+  
+  .copy {
+    width:51.22950819672130000%;
+    float:left;
+  }
 
-}
-
-.wide-box .right {
-	width:48.770491803278700%; //oikea on 48.77
-	position:relative;
-	float:right;
-}
-
-.wide-box .copy {
-	width:51.22950819672130000%;
-	float:left;
-	//position:absolute;
-	//top:1.5em;
-	//background-color:rgb(255,255,255);
-	//background-color:rgba(255,255,255,0.7);
-	//display:none;
-	//height:12em;
 }
 
 @media #{$tablet-portrait} {
 
-  .wide-box {
-    width:48.8%;
-    
-    img {
-      width:49.0%;//oikea on 48.77
-      position:relative;
-      float:left;
-    }
+.wide-box {
+  width:48.8%;
+  
+  img {
+    width:49.0%;//oikea on 48.77
+    position:relative;
+    float:left;
   }
   
-  .wide-box .right {
-  	width:48.8%;//oikea on 48.77
-  	position:relative;
+  .right {
+    width:48.8%;//oikea on 48.77
+    position:relative;
   }
-
-  .wide-box .copy {
-  	width:51.0000%;
+  
+  .copy {
+    width:51.0000%;
   }
+}
+  
+ 
 }
 
 @media #{$mobile-portrait} {
@@ -65,31 +61,24 @@
     img {
       width:100%;
     }
-  }
     
-  .wide-box .right {
-  	width:100%;
+    .right {
+      width:100%;
+    }
+    
+    .copy {
+      width:100%;
+      position: absolute;
+    //left:0.3em;
+      background-color:rgb(255,255,255);
+      background-color:rgba(255,255,255,0.7);
+      display:block;
+      top:1em;
+    //right:0.5em;
+    }
+    
+    
   }
   
-  .wide-box .copy {
-  	width:100%;
-  	position: absolute;
-  	//left:0.3em;
-  	background-color:rgb(255,255,255);
-  	background-color:rgba(255,255,255,0.7);
-  	display:block;
-  	top:1em;
-  	//right:0.5em;
-  }
-  
-  .square {
-    width:48.8%;
-    padding-bottom:2em;
-  }
-  
-  .big_square {
-    width:48.8%;
-    padding-bottom:2em;
-  }
 
 }

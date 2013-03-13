@@ -3,21 +3,21 @@
 	position:relative;
 	float:left;
 	overflow:hidden;	
+
+  .copy {
+    width:100%;
+    position: absolute;
+    background-color:rgb(255,255,255);
+    background-color:rgba(255,255,255,0.7);
+    display:block;
+    bottom:1em;
+  } 
+  
+  img {
+    width:100%; 
+  }
 }
 
-.square-box .copy {
-	width:100%;
-	position: absolute;
-	background-color:rgb(255,255,255);
-	background-color:rgba(255,255,255,0.7);
-	display:block;
-	bottom:1em;
-}	
-
-
-.square-box img {
-	width:100%;	
-}
 
 @media #{$tablet-portrait} {
 
