@@ -4,52 +4,45 @@ header {
 
 .nav-container {
   margin-bottom:1.5em;
+  padding-bottom:0.15em;
+  padding-top:0.35em;
   
   nav {
+
     ul {
+      padding-right:1%;
+      padding-left:1%;
       text-align: right;
       overflow: auto;
       list-style:none; 
-      font-size:1.3em;
+      font-size:1.2em;
       text-transform: uppercase;
       font-family: $font;
       margin: 0;
     }
   
     li {
-      margin: 0.5% 0 0.3% 1%;
+      margin: 0.5% 0 0.3% 0%;
       text-align: center;
       overflow: auto;
       float: left;
-      width: 16.4166666667%;
+      padding-right:2em;
     }
     
     a {
       text-decoration: none;
       margin: 0;
       display: block;
-      padding: 2% 0 1% 1%;
-      margin: 1% 2% 1% 0;
-      background-color: rgb(78,94,73);
-      background-color: rgba(255,255,255,0.1);
       color: #fff;
       color: rgba(255,255,255, 0.9);
       letter-spacing: 0.05em;
     }
     
-    .selected{
-      background: none repeat scroll 0 0 #8f968d;
+    .selected a{
+      color:#a4c8a1;
     }
     
   }
-}
-
-@media #{$tablet-portrait} {
-
-  .nav-container nav li {
-    width: 22%;
-  }
-
 }
 
 @media #{$mobile-portrait} {
