@@ -3,6 +3,9 @@
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gte IE 6)&(lte IE 8)]>
+= javascript_include_tag "vendor/selectivizr-min.js"    
+<![endif]-->
 %html.no-js
   %head
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
@@ -12,7 +15,6 @@
     
     = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Source+Sans+Pro|Share+Tech|Carrois+Gothic&subset=latin,latin-ext"
     = javascript_include_tag "vendor/jquery-1.9.1.min.js"
-    
     = javascript_include_tag "vendor/modernizr-2.6.2-custom.js"
     
     =favicon_tag "/favicon.ico"
