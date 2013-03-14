@@ -1,5 +1,10 @@
 .split-promo {
-  width:32.13333333%;
+  
+  //Timo K special hack
+  //width:32.13333333%;
+  @include span-columns(4,12);
+  @include nth-omega(3n);
+  
   a {
     text-decoration: none;
   }
@@ -32,7 +37,12 @@
 @media #{$tablet-portrait} {
 
   .split-promo{
-    width:48.8%;
+
+    //Timo K special hack
+    //width:48.8%;
+    @include span-columns(6,12);
+    @include remove-nth-omega(3n);
+    @include nth-omega(2n);
   }
 
 }
@@ -40,7 +50,10 @@
 @media #{$mobile-portrait} {
 
   .split-promo{
-    width:98.8%;
+
+    //Timo K special hack
+    //width:98.8%;
+    @include span-columns(12 omega,12);
     background:none;
     padding-bottom:1em;
   

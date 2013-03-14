@@ -1,6 +1,10 @@
 .wide-box {
   background: none repeat scroll 0 0 #ffffff;
-	width:48.8%;
+
+	//Timo K special hack
+	//width:48.8%;	
+	@include span-columns(6,12);
+	@include nth-omega(2n);
 	position:relative;
 	float:left;
 	//clear:both;
@@ -27,34 +31,14 @@
 
 }
 
-@media #{$tablet-portrait} {
-
-.wide-box {
-  width:48.8%;
-  
-  img {
-    width:49.0%;//oikea on 48.77
-    position:relative;
-    float:left;
-  }
-  
-  .right {
-    width:48.8%;//oikea on 48.77
-    position:relative;
-  }
-  
-  .copy {
-    width:51.0000%;
-  }
-}
-  
- 
-}
 
 @media #{$mobile-portrait} {
 
   .wide-box {
-  	width:98.8%;
+    //Timo K special hack
+    //width:98.8%;
+    @include span-columns(12 omega,12);
+  	
     background: none;
     padding-bottom:1em;
     

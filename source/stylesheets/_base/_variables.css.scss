@@ -27,3 +27,9 @@ $ipad-portrait: "only screen and (min-device-width : 768px) and (max-device-widt
 $desktop-and-laptop: "only screen and (min-width : 1224px)";
 $large-screen: "only screen and (min-width : 1824px)";
 $iphone4: "only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5)";
+
+//Timo K special hack Susy for use
+$total-columns  : 12;
+$column-width   : 4em;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;

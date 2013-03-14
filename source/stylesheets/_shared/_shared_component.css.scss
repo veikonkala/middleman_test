@@ -1,6 +1,10 @@
 .box {
   //background: none repeat scroll 0 0 #ffffff;
-  margin: 0.6% 0.6% 0.6% 0.6%;
+  
+  //Timo K special hack
+  //margin: 0.6% 0.6% 0.6% 0.6%;
+  margin-top:0.6%;
+  margin-bottom:0.6%;
   float: left;
   vertical-align: top;
   display: block;
@@ -17,19 +21,15 @@
 
 
 .section {
-  margin-right: 5%;
-  margin-left: 5%;
-  width: 90%; 
-  clear: both;
-}
-
-@media #{$desktop} {
-
-  .section{ 
-     width:960px;
-     margin: 0 auto;
-  }
+//  margin-right: 5%;
+//  margin-left: 5%;
+//  width: 90%; 
+//Timo K special hack
+  @include container;
   
+  clear: both;
+
 }
+
 
 

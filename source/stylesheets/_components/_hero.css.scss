@@ -1,6 +1,7 @@
 .hero {
 	position:relative;
-	width:98.8%;
+	//width:98.8%;
+	@include span-columns(12 omega,12);
 	float:left;
 	overflow:hidden;
 

@@ -49,22 +49,15 @@ header {
 
   .nav-container nav li{
     margin-top: 0.1em;
-    width: 90%;
+    @include span-columns(12,12);
+//    width: 90%;
     clear: both;
     text-align: left;
-    padding-left: 5%;
-    padding-right: 5%;
+//    padding-left: 5%;
+//    padding-right: 5%;
   }
-
-}
-
-@media #{$desktop} {
- 
   .nav-container{
-     width:960px;
-     //margin: 0 auto;
-     margin-left:auto;
-     margin-right:auto;
-    
+    margin-bottom:1em;
   }
+
 }

@@ -1,5 +1,9 @@
 .square-box {
-	width:23.8%;
+
+  //Timo K special hack
+	//width:23.8%;
+	@include span-columns(3,12);
+	@include nth-omega(4n);
 	position:relative;
 	float:left;
 	overflow:hidden;	
@@ -22,7 +26,11 @@
 @media #{$tablet-portrait} {
 
   .square-box{
-  	width:48.8%;
+    //Timo K special hack
+    @include span-columns(6,12);
+    @include remove-nth-omega(4n);
+    @include nth-omega(2n);
+  	
   }
 
 }
@@ -30,7 +38,8 @@
 @media #{$mobile-portrait} {
 
   .square-box{
-  	width:98.8%;
+    //Timo K special hack
+    @include span-columns(12 omega,12);
   	background:none;
   	padding-bottom:1em;
   }
