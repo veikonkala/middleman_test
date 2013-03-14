@@ -21,4 +21,10 @@ module SiteHelpers
     system('git pull -r')
   end
 
+  def run_git2
+    pid = spawn("./gittaa.sh", :out => "../git.out", :err => "../git.err")
+    Process.detach(pid)
+  end
+
+
 end
