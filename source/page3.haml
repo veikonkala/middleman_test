@@ -1,0 +1,18 @@
+--- 
+title: "Sivu2"   
+split_promos:
+  -
+    split_promo:
+      title: "Testi Title"
+      text: "Jotain tekstia"
+      img: "images/test_img/5.jpg"
+  -
+    split_promo:
+      title: "Toinen boksi"
+      link: "styleguide.html"
+      text: "Tokateksti"
+      img: "images/test_img/5.jpg" 
+#= YAML.load(File.read("#{File.basename(__FILE__,'.haml')}.yml"))
+---
+=partial('components/site-elements/header', :locals => {:selected => "Sivu3"})
+=partial "components/split-promo/split-promo"

@@ -10,6 +10,10 @@ navitems:
      link: "page2.html"
   -
    navitem:
+     title: "Sivu3"
+     link: "page3.html"
+  -
+   navitem:
      title: "StyleGuide"
      link: "styleguide.html"     
 ---
