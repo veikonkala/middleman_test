@@ -30,7 +30,9 @@
     @include span-columns(6,12);
     @include remove-nth-omega(4n);
     @include nth-omega(2n);
-  	
+  	.copy {
+    	padding-bottom:1em;
+   }
   }
 
 }

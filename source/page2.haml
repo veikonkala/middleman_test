@@ -1,29 +1,29 @@
 --- 
-title: "Sivu2"   
+title: "Components"
 square_boxes:
   -
    square_box:
      img: "images/test_img/1.jpg"
-     title: "Tokasivu"
-     text: "supa huba doo"
+     title: "REUSABLE COMPONENTS!"
+     text: "Components are the site building blocks."
      link: "styleguide.html" 
   -
    square_box:
      img: "images/test_img/2.jpg"
-     title: "Jee, se ..."
-     text: "..syö sinäkin"
+     title: "COMPONENT CAN BE USED..."
+     text: "...anyhere on the pages."
      link: "frontpage.html"
   -
    square_box:
      img: "images/test_img/3.jpg"
-     title: "toimii..."
-     text: "supa huba doo"
+     title: ""
+     text: "Only text attribute has been set here..."
      link: "#" 
   -
    square_box:
      img: "images/test_img/4.jpg"
-     title: "hienosti"
-     text: "..syö sinäkin"
+     title: "SQUARE_BOX COMPONENT"
+     text: ""
      link: "#"  
 split_promos:
   -
@@ -65,6 +65,6 @@ split_promos:
      link: "#"
 #= YAML.load(File.read("#{File.basename(__FILE__,'.haml')}.yml"))
 ---
-=partial('components/site-elements/header', :locals => {:selected => "Sivu2"})
+=partial('components/site-elements/header', :locals => {:selected => "Components"})
 =partial "components/square-box/square-box"
 =partial "components/split-promo/split-promo"

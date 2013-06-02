@@ -1,82 +1,59 @@
 ---
-title: "Etusivu"
-description: "Proto - "
+title: "Frontpage"
+description: "Prototype with components - "
 heros:
   -
    hero:
      img: "images/test_img/hero16_9.jpg"
-     title: "SET TARGETS HIGH"
-     text: "with middleman you can"
+     title: "EXAMPLE CONTENT WITH 16:9 IMAGE"
+     text: "This content is presented using a hero component with 16:9 image"
      link: "page2.html" 
      
 wide_boxes:
   -
    wide_box:
      img: "images/test_img/2.jpg"
-     title: "THE GROUND"
-     text: "...is there"
+     title: "CONTENT IN DIFFERENT COMPONENTS"
+     text: "Same content can be presented in wide_box or square_box component"
      link: "#" 
   -
    wide_box:
      img: "images/test_img/1.jpg"
      type: "right"
-     title: "BRING ON"
-     text: "the colors"
+     title: "WIDE_BOX AND 1:1 IMAGE"
+     text: "This text is presented using the wide_box right component"
      link: "#"
      
 square_boxes:
   -
    square_box:
      img: "images/test_img/1.jpg"
-     title: "See"
-     text: "opportunity"
+     title: "CONTENT WITH 1:1 IMAGE"
+     text: "Component handles content presentation"
      link: "#" 
   -
    square_box:
      img: "images/test_img/2.jpg"
-     title: "The"
-     text: "of"
-     link: "#"
+     title: "CONTENT IN DIFFERENT COMPONENTS"
+     text: "Same content can be presented in wide_box or square_box component"
+     link: "#" 
   -
    square_box:
      img: "images/test_img/3.jpg"
-     title: "Life"
-     text: "a"
+     title: "PROMOTION TITLE"
+     text: "Promotion 1:1 image"
      link: "#" 
   -
    square_box:
      img: "images/test_img/4.jpg"
-     title: "Happen"
-     text: "lifetime"
+     title: "ANOTHER 1:1 IMAGE"
+     text: "Component defines how content is presented"
      link: "#"  
-  -
-   square_box:
-     img: "images/test_img/2.jpg"
-     title: "Pure"
-     text: "is clean"
-     link: "#" 
-  -
-   square_box:
-     img: "images/test_img/4.jpg"
-     title: "Right"
-     text: "is wrong"
-     link: "#"
-  -
-   square_box:
-     img: "images/test_img/1.jpg"
-     title: "Doing"
-     text: "is believing"
-     link: "#" 
-  -
-   square_box:
-     img: "images/test_img/3.jpg"
-     title: "Square"
-     text: "is a box"
-     link: "#"
+
  
 #= YAML.load(File.read("#{File.basename(__FILE__,'.haml')}.yml"))
 ---
-=partial('components/site-elements/header', :locals => {:selected => "Etusivu"})
+=partial('components/site-elements/header', :locals => {:selected => "Frontpage"})
 =partial "components/hero/hero"
 =partial "components/wide-box/wide-box"
 =partial "components/square-box/square-box"
