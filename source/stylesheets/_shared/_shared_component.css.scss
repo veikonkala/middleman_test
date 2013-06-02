@@ -1,8 +1,9 @@
 .box {
-  //background: none repeat scroll 0 0 #ffffff;
-  
+  background: none repeat scroll 0 0 #ffffff;  
+
   //Timo K special hack
   //margin: 0.6% 0.6% 0.6% 0.6%;
+
   margin-top:0.6%;
   margin-bottom:0.6%;
   float: left;
@@ -12,6 +13,7 @@
   -webkit-border-radius: 0.8em 0.15em 0.8em 0.15em;
   -khtml-border-radius: 0.8em 0.15em 0.8em 0.15em;
   border-radius: 0.8em 0.15em 0.8em 0.15em;
+
 }
 
 .box a {
@@ -25,6 +27,7 @@
 //  margin-left: 5%;
 //  width: 90%; 
 //Timo K special hack
+  
   @include container;
   
   clear: both;
