@@ -1,6 +1,9 @@
 ---
 title: "Frontpage"
 description: "Prototype with components - "
+section_title: "veikonkala.org"
+section_text: "Where things happen."
+section_color: "orange-bg"
 heros:
   -
    hero:
@@ -54,6 +57,6 @@ square_boxes:
 #= YAML.load(File.read("#{File.basename(__FILE__,'.haml')}.yml"))
 ---
 =partial('components/site-elements/header', :locals => {:selected => "Frontpage"})
-=partial "components/hero/hero"
-=partial "components/wide-box/wide-box"
+=partial("components/hero/hero")
+=partial("components/wide-box/wide-box", :locals => {:color => "blue-bg"})
 =partial "components/square-box/square-box"

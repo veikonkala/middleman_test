@@ -14,6 +14,7 @@ $font: 'Average Sans',Helvetica,Arial,sans-serif;
 // Colors
 //$bgcolor: #d5d9d1;
 $bgcolor: #f2f2f2;
+$font-light-color:#f2f2f2;
 
 
 // Mediaquery breakpoints 
@@ -35,8 +36,15 @@ $desktop-and-laptop: "only screen and (min-width : 1224px)";
 $large-screen: "only screen and (min-width : 1824px)";
 $iphone4: "only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5)";
 
-//Timo K special hack Susy for use
+//Timo K special hack Susy for use, this is the container. max widt is 12*5em=12*5*16=>960px
 $total-columns  : 12;
 $column-width   : 4em;
 $gutter-width   : 1em;
 $grid-padding   : $gutter-width;
+
+
+//component fullwide bg-colors
+
+$blue-bg:#122a6d;
+$orange-bg:#d96517;
+$green-bg:#2ea712

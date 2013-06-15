@@ -20,4 +20,6 @@ navitems:
           -else
             %li
               =link_to s.navitem.title, s.navitem.link, :relative =>true
+    -if data.page.section_title!=nil
+      =partial("components/section-header/section-header", :locals => {:color => "orange-bg"})
 

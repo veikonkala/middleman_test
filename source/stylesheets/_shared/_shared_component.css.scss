@@ -34,5 +34,22 @@
 
 }
 
+.blue-bg{
+  //#d96517
+  //#122a6d
+  @include get-gradient($blue-bg);
 
+}
+
+.orange-bg{
+
+  @include get-gradient($orange-bg);
+
+}
+
+.green-bg{
+
+  @include get-gradient($green-bg);
+
+}
 

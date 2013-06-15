@@ -1,0 +1,29 @@
+.section-header {
+  .copy{
+    padding-top:3.5em;
+    padding-bottom:1em;
+    //padding-left:10em;
+    // padding-right:10em;
+  }
+  h1,p{
+    color:$font-light-color;
+  }
+  h1{
+    @include get-fonts(4,0.5,0);
+    text-transform:uppercase;
+  }
+  p{
+    @include get-fonts(2,0.5,0);
+
+  }
+}
+
+@media #{$tablet-portrait} {
+  
+}
+
+@media #{$mobile-portrait} {
+  
+
+}
+
