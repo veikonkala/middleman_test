@@ -7,7 +7,7 @@ sgnavitems:
   -
    navitem:
      title: "Hero2"
-     link: "hero2.html"
+     link: "sg_hero2.html"
   -
    navitem:
      title: "Wide-box"
@@ -20,5 +20,12 @@ sgnavitems:
    navitem:
      title: "Split-promo"
      link: "sg_split_promo.html"
-
+  -
+   navitem:
+     title: "Section header"
+     link: "sg_section_header.html"
+  -
+   navitem:
+     title: "Text block"
+     link: "sg_text_block.html"
 ---

@@ -2,8 +2,8 @@
 navitems:
   -
    navitem:
-     title: "Frontpage"
-     link: "frontpage.html"
+     title: "Home"
+     link: "home.html"
   -
    navitem:
      title: "Components"

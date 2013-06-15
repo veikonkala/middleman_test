@@ -1,0 +1,54 @@
+.half-hero {
+	position:relative;
+	//width:98.8%;
+  @include span-columns(6,12);
+  @include nth-omega(2n);	float:left;
+	overflow:hidden;
+
+  .copy {
+    width:100%;
+    //position: absolute;
+    //left:0.3em;
+    background-color:rgb(255,255,255);
+    display:block;
+    bottom:0em;
+    right:0em;
+    font-size:1.5em;    
+    //float:right;  
+  }
+  
+  .img{
+    position:relative;
+  }
+}
+
+@media #{$tablet-portrait} {
+  .half-hero{
+    @include span-columns(12,12);
+    margin-bottom:1em;
+
+
+    .copy {
+      width:80%;
+      position: absolute;
+      background-color:rgba(255,255,255,0.8);
+
+      bottom:2em;
+      font-size:1em;
+      padding-bottom:1em;
+    }
+  }
+
+}
+
+@media #{$mobile-portrait} {
+  .half-hero{
+    .copy {
+      position:relative;
+      bottom:0em;
+      font-size:0.8em;
+    }
+  }
+
+}
+

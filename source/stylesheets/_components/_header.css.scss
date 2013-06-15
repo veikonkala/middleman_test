@@ -3,15 +3,19 @@ header {
   //background: #3e4d39;
   //background: #f2f2f2;
   //background:#2c2c2c;
-  background:#dbdbdb;
-  //@include get-gradient(#dbdbdb);
+  //background:$header-bg;
+}
+
+.header{
+  margin-bottom:1.5em;
+
 }
 
 .nav-container {
-  margin-bottom:1.5em;
   //padding-bottom:0.15em;
   padding-top:0.35em;
-  
+  @include get-gradient($header-bg);
+
   nav {
 
     ul {

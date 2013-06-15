@@ -13,8 +13,6 @@ $font: 'Average Sans',Helvetica,Arial,sans-serif;
 
 // Colors
 //$bgcolor: #d5d9d1;
-$bgcolor: #f2f2f2;
-$font-light-color:#f2f2f2;
 
 
 // Mediaquery breakpoints 
@@ -45,6 +43,14 @@ $grid-padding   : $gutter-width;
 
 //component fullwide bg-colors
 
-$blue-bg:#122a6d;
+//Gradient colors
+$blue-bg:#e3dee7;
 $orange-bg:#d96517;
-$green-bg:#2ea712
+$green-bg:#2ea712;
+
+//site
+$bgcolor: #f2f2f2;
+$font-light-color:#f2f2f2;
+$font-darkgrey-color:#3b3b3b;
+$header-bg:lighten(#dbdbdb,15%);
+

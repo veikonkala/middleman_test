@@ -4,29 +4,8 @@ description: "Prototype with components - "
 section_title: "veikonkala.org"
 section_text: "Where things happen."
 section_color: "orange-bg"
-heros:
-  -
-   hero:
-     img: "images/test_img/hero16_9.jpg"
-     title: "EXAMPLE CONTENT WITH 16:9 IMAGE"
-     text: "This content is presented using a hero component with 16:9 image"
-     link: "page2.html" 
-     
-wide_boxes:
-  -
-   wide_box:
-     img: "images/test_img/2.jpg"
-     title: "CONTENT IN DIFFERENT COMPONENTS"
-     text: "Same content can be presented in wide_box or square_box component"
-     link: "#" 
-  -
-   wide_box:
-     img: "images/test_img/1.jpg"
-     type: "right"
-     title: "WIDE_BOX AND 1:1 IMAGE"
-     text: "This text is presented using the wide_box right component"
-     link: "#"
-     
+
+
 square_boxes:
   -
    square_box:
@@ -52,11 +31,29 @@ square_boxes:
      title: "ANOTHER 1:1 IMAGE"
      text: "Component defines how content is presented"
      link: "#"  
-
+half_heros:
+  -
+   hero:
+     img: "images/test_img/5.jpg"
+     title: "Reissuexceli"
+     text: "Calculate all your trip expences" 
+  -
+   hero:
+     img: "images/test_img/5.jpg"
+     title: "Kerava Weather"
+     link: "index.html"
+     text: "Live weather statistics from Kerava"  
+text_blocks:
+  -
+   text_block:
+     title: '<i>"Everything goes well if you do it your self"</i>'
+     text: "-Veikonkala" 
+   
  
 #= YAML.load(File.read("#{File.basename(__FILE__,'.haml')}.yml"))
 ---
 =partial('components/site-elements/header', :locals => {:selected => "Frontpage"})
-=partial("components/hero/hero")
-=partial("components/wide-box/wide-box", :locals => {:color => "blue-bg"})
+=partial "components/half_hero/half_hero"
+//=partial("components/text_block/text_block", :locals => {:color => "blue-bg"})
+=partial("components/text_block/text_block")
 =partial "components/square-box/square-box"
