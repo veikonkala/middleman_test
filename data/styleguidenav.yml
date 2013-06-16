@@ -10,6 +10,10 @@ sgnavitems:
      link: "sg_hero2.html"
   -
    navitem:
+     title: "Half-Hero"
+     link: "sg_half_hero.html"
+  -
+   navitem:
      title: "Wide-box"
      link: "sg_wide_box.html"
   -
@@ -28,4 +32,8 @@ sgnavitems:
    navitem:
      title: "Text block"
      link: "sg_text_block.html"
+  -
+   navitem:
+     title: "Article"
+     link: "sg_article.html"
 ---

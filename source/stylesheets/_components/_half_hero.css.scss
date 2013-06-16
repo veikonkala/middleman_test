@@ -13,8 +13,17 @@
     display:block;
     bottom:0em;
     right:0em;
-    font-size:1.5em;    
+    font-size:1.2em;  
+
     //float:right;  
+  }
+  h2{
+    text-transform:uppercase;
+    position:absolute;
+    color:$font-light-color;
+    top:0em;
+    left:0em;
+    background-color:lighten(#000,15%);  
   }
   
   .img{
@@ -26,6 +35,12 @@
   .half-hero{
     @include span-columns(12,12);
     margin-bottom:1em;
+
+    h2{
+      position:relative;
+      background-color:transparent;
+      color:black;
+    }
 
 
     .copy {
