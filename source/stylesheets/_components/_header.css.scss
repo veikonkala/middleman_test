@@ -8,11 +8,15 @@ header {
 
 .header{
   margin-bottom:1.5em;
+  //width:100%;
 
 }
 
 .nav-container {
+  //position:fixed;
+  //z-index:12;
   //padding-bottom:0.15em;
+  width:100%;
   padding-top:0.35em;
   @include get-gradient($header-bg);
 
