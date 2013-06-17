@@ -59,6 +59,8 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+set :debug_assets, true
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -78,7 +80,8 @@ configure :build do
   
   #Clean urls
   #activate :directory_indexes
-  
+
+  ignore 'app/*'  
   # Compress PNGs after build
   # First: gem install middleman-smusher
   # require "middleman-smusher"
