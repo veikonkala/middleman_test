@@ -1,53 +1,65 @@
 ---
-title:
-description:
+title: "Frontpage"
+description: "Prototype with components - "
+section_title: "veikonkala.org"
+section_text: "Where things happen."
+section_image: "images/test_img/veikonkala8.png"
+section_color: "orange-bg"
+
+
+square_boxes:
+  -
+   square_box:
+     img: "images/test_img/responsive.jpg"
+     title: "RESPONSIVE DEMO"
+     text: ""
+     link: "/responsive/" 
+  -
+   square_box:
+     img: "images/test_img/responsive_proto.jpg"
+     title: "HTML PROTOTYPE"
+     text: ""
+     link: "home.html" 
+  -
+   square_box:
+     img: "images/test_img/black.jpg"
+     title: "RC"
+     text: ""
+     link: "#" 
+  -
+   square_box:
+     img: "images/test_img/black.jpg"
+     title: "ARDUINO"
+     text: ""
+     link: "#"  
+half_heros:
+  -
+   hero:
+     img: "images/test_img/reissuexceli.jpg"
+     title: "Reissuexceli"
+     text: "Calculate all your trip expences" 
+     link: "/trip/"
+
+  -
+   hero:
+     img: "images/test_img/kerava.jpg"
+     title: "Kerava Weather"
+     link: "index.html"
+     text: "Live weather statistics from Kerava"  
+text_blocks:
+  -
+   text_block:
+     title: '<i>"Everything goes well if you do it yourself"</i>'
+     text: "-Veikonkala" 
+  
+ 
+#= YAML.load(File.read("#{File.basename(__FILE__,'.haml')}.yml"))
 ---
+=partial('components/site-elements/header', :locals => {:selected => "Home", :noNav =>"yes"})
+=partial "components/half_hero/half_hero"
+//=partial("components/text_block/text_block", :locals => {:color => "blue-bg"})
+=partial("components/text_block/text_block")
+=partial "components/square-box/square-box"
+//%div{:style=>"padding-bottom:20em;"}
+=partial("components/veka_youtube/veka_youtube")
 
-%h1
-  This is template for doing HTML prototyping using HAML, SASS and component based approach
-%p
-  Based on: Middleman Project Template: HTML5BP HAML -last update 13:25
-%br
-%h2
-  Example pages
-%p
-  Click 
-  =link_to 'here','home.html', :relative =>true 
-  to browse around.
-%br
-%h2
-  Summary of the files
-
-%p
-  %b
-    *Pages
-  (that are composed of components and the actual copytext (yml data) should be in folder 
-  %b
-    source)
-%p      
-  %b
-    *Components 
-  are in 
-  %b
-    source/components
-%p
-  %b*Images
-  are under source/images
-%p     
-  *Layouts in folder source/layouts. It can be defined page to use some other layout from config.rb
-%p
-  *Helpers are in helpers folder.
-%p
-  *Stylesheets are under source/stylesheet
-%p
-  *External yml data are in separate files under data folder.
-
-%h1
-  Running the commands
-
-%p
-  Start the middleman by running: "bundle exec middleman"
-%p
-  Build the static site by running: "bundle exec middleman build"
-%p
-  If you want to run in separate port use: "middleman server -p 4567 -e development"
